@@ -1,0 +1,12 @@
+name: R-Place
+version: ${project.version}
+main: com.seailz.rplace.RPlace
+api-version: 1.18
+authors: [ Seailz ]
+description: r/place, in Minecraft!
+website: www.seailz.com
+commands:
+  start:
+    description: Start r/place!
+  bypass:
+    description: Bypass!
