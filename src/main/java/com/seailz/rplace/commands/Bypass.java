@@ -13,6 +13,7 @@ public class Bypass implements CommandExecutor {
         RPlace main = RPlace.getPlugin(RPlace.class);
         Player p = (Player) sender;
         if (!p.hasPermission("command.bypass")) return true;
+        System.out.println("Test");
         if (main.getConfig().getBoolean(p.getUniqueId() + ".bypass")) {
             p.sendMessage(ChatColor.GREEN + "We've disabled bypass!");
             main.getConfig().set(p.getUniqueId() + ".bypass", false);
